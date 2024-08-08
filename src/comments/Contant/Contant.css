@@ -1,0 +1,185 @@
+.Contant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.content_title{
+    position: relative;
+}
+
+.content_title h1{
+   padding: 0px 30px;
+   font-size: 80px;
+   font-weight: 600;
+}
+
+.content_title img{
+    position: absolute;
+    width: 450px;
+    height: 80px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.content_section{
+    display: flex;
+    gap: 150px;
+
+}
+
+.content_left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content_left h1{
+    font-size: 80px;
+    font-weight: 400;
+    background: linear-gradient(270deg, #DF8908 80%, #B415FF 100%) ;
+    background-clip: text ;
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+}
+
+.content_left p{
+    max-width: 550px;
+    color: #D8D8D8;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+
+
+.contant_details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #D8D8D8;
+    font-size: 22px;
+}
+
+.content_detail{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.content_detail img{
+    width: 40px;
+    height: 40px;
+}
+
+.cointainer_right{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+
+.cointainer_right label{
+    color: #D8D8D8;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.cointainer_right input{
+    border: none;
+    width: 700px;
+    height: 78px;
+    padding-left: 20px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #a0a0a0;
+    font-family: Outfit;
+    font-size: 20px;
+}
+
+.cointainer_right textarea{
+    width: 650px;
+    border: none;
+    padding: 25px;
+    border-radius: 4px;
+    background-color: #32323c;
+    color: #a0a0a0;
+    font-family: Outfit;
+    font-size: 20px;
+}
+
+
+.cointainer_submit{
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    font-size: 22px;
+    padding: 20px 60px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cointainer_submit:hover{
+    transform: scale(1.01);
+    transition: 0.3s;
+    
+}
+
+@media (max-width: 768px) {
+    .Contant{
+        gap: 50px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+    .content_title h1{
+        padding: 0;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .content_title img{
+        width: 275px;
+        margin: -10px;
+    }
+    .content_section{
+        flex-direction: column;
+    }
+
+    .content_left h1{
+        font-size: 54px;
+
+    }
+
+    .content_left p{
+        font-size: 18px;
+    }
+    .contant_detail{
+        gap: 20px;
+    }
+    .contant_detail img{
+        width: 25px;
+    }
+
+    .cointainer_right label{
+        font-size: 20px;
+    }
+
+    .cointainer_right input{
+        width: 100%;
+        font-size: 20px;
+    }
+    .cointainer_right textarea{
+        width: 95%;
+    }
+
+    .cointainer_submit{
+        font-size: 20px;
+        padding: 15px 40px;
+    }
+    
+}
